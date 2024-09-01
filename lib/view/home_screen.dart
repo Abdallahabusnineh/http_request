@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                  SliverList(
                       delegate: SliverChildBuilderDelegate((context, i) {
-                    return PostBuilder(index: controller.posts[i].id-1);
+                    return PostBuilder(index: controller.posts[i].id!-1);
                      //todo
                         //why is this index -1 ?
                   }, childCount: controller.posts.length)),

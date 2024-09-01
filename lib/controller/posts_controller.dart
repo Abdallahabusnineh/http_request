@@ -8,9 +8,8 @@ import '../model/posts_model.dart';
 import '../shared/core/network/error_message_model.dart';
 
 class PostsController extends GetxController{
-  List posts=[];
-  Future<List> getPosts()async{
-
+  List <PostsModel> posts=[];
+  Future<List<PostsModel>> getPosts()async{
     var response=await get(
       Uri.parse(ApiUrl.getPosts),
     );

@@ -9,10 +9,10 @@ import '../shared/core/network/apis_url.dart';
 import '../shared/core/network/error_message_model.dart';
 
 class CommentsController extends GetxController{
-  List comments=[];
+  List <CommentsModel>comments=[];
 
 
-  Future<List> getCommentsByPostId(int postId)async{
+  Future<List<CommentsModel>> getCommentsByPostId(int postId)async{
 
     var response=await get(
       Uri.parse(ApiUrl.getCommentsByPostId(postId)),

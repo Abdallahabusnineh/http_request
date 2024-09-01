@@ -37,14 +37,14 @@ final int index;
                       title:   Column(crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            controller.comments[index].name,
+                            '${controller.comments[index].name}',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 14,
                             ),
                           ),
                           Text(
-                            controller.comments[index].email,
+                            '${controller.comments[index].email}',
                             style: TextStyle(
                               fontSize: 11,
                               color: Colors.grey,
@@ -52,7 +52,7 @@ final int index;
                           ),
                         ],
                       ),
-                      subtitle: Text(controller.comments[index].body,
+                      subtitle: Text('${controller.comments[index].body}',
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 10

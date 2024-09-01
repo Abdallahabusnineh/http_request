@@ -34,7 +34,7 @@ final int index ;
                           children: [
                             Expanded(
                               child: Text(
-                                controller.posts[index].title,
+                                '${controller.posts[index].title}',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
@@ -62,7 +62,7 @@ final int index ;
               SizedBox(height: 10),
               // Post Content
               Text(
-                controller.posts[index].body,
+                '${controller.posts[index].body}',
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 10),
