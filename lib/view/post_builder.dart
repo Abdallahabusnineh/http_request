@@ -21,7 +21,7 @@ final int index ;
               Row(
                 children: [
                   CircleAvatar(
-                    child: Text('${index + 1}'),
+                    child: Text('${controller.posts[index].id}',style: TextStyle(fontSize: 15),),
                     backgroundColor: Colors.grey.shade300,
                     radius: 25,
                   ),

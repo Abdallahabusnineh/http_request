@@ -21,7 +21,7 @@ final int index;
           return  FutureBuilder(future: controller.getCommentsByPostId(index), builder:
           (context, snapshot) {
             return
-            ListView.builder(
+             ListView.builder(
               itemBuilder: (BuildContext context, int index) {
                 return  ListTile(
                   leading:   CircleAvatar(
@@ -66,6 +66,7 @@ final int index;
               shrinkWrap: true,
             );
           },
+
           );
         },
       ),

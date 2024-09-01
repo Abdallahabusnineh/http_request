@@ -13,6 +13,7 @@ class CommentsController extends GetxController{
 
 
   Future<List> getCommentsByPostId(int postId)async{
+
     var response=await get(
       Uri.parse(ApiUrl.getCommentsByPostId(postId)),
     );
